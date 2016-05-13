@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name" translatable="false">CCBackup</string>
+    <string name="app_id">49863537194-8l15mn615erld70m90u0v6du7rv0deso.apps.googleusercontent.com</string>
+    <string name="main_screen_text">WHAT TO DO?</string>
+    <string name="main_backup_button_text">BACKUP</string>
+    <string name="restore_button_text">RESTORE</string>
+    <string name="title_activity_backup_accounts_choose">backupAccountsChooseActivity</string>
+    <string name="backup_accounts_head_text">Choose your accounts</string>
+    <string name="GD_name">Google Drive</string>
+    <string name="YD_name">Yandex Disc</string>
+    <string name="DB_name">Dropbox</string>
+    <string name="GD_button_on">Google Drive ON</string>
+    <string name="GD_button_off">Google Drive OFF</string>
+    <string name="YD_button_off">Yandex Disc OFF</string>
+    <string name="YD_button_on">Yandex Disc ON</string>
+    <string name="DB_button_off">Dropbox OFF</string>
+    <string name="DB_button_on">Dropbox ON</string>
+    <string name="title_activity_auth_doc">AuthDocActivity</string>
+    <string name="activity_file_roulette_name">activity_file_roulette</string>
+    <string name="activity_file_selection">FileSelectionActivity</string>
+    <string name="title_activity_file_roulette">FileRouletteActivity</string>
+
+    <string name="activity_backup_accounts_choose_name">activity_backup_accounts_choose</string>
+    <string name="run_backup_text">CONTINUE</string>
+    <string name="chooseFilesButtonText">Choose Files</string>
+    <string name="passwordHintText">master password</string>
+    <string name="chooseFilesText">Choose Files</string>
+    <string name="action_settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="files">Files</string>
+    <string name="directories">Folders</string>
+    <string name="goUp">Go Up</string>
+    <string name="all">Check All</string>
+    <string name="cancel">Cancel</string>
+    <string name="none">Uncheck All</string>
+    <string name="ext">External</string>
+    <string name="Int">Internal</string>
+    <string name="New">New Folder</string>
+    <string name="CNew">Enter New Folder Name</string>
+    <string name="create">Create</string>
+    <string name="chooseFolderText">Choose Folder</string>
+    <string name="encodingFile">Encoding file</string>
+    <string name="uploadingFile">Upoading file</string>
+    <string name="signin_other_error">Error to Sign In to Google</string>
+    <string name="start">START</string>
+</resources>

@@ -1,0 +1,71 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        prod {
+            keyAlias 'serhiyshkurin'
+            keyPassword 'x_63456345_x'
+            storeFile file('D:/Моя/Prod_key_Backup.jks')
+            storePassword 'x_63456345_x'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    defaultConfig {
+        applicationId "ua.ccbackup.serhiyshkurin"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+        signingConfig signingConfigs.prod
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.prod
+        }
+        debug {
+            signingConfig signingConfigs.prod
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/cwac-merge-1.0.4.jar')
+    compile files('libs/picasso-2.4.0.jar')
+    compile 'com.android.support:appcompat-v7:23.2.0'
+    compile 'com.android.support:design:23.2.0'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    compile 'com.google.android.gms:play-services-ads:8.4.0'
+    compile 'com.google.android.gms:play-services-identity:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+apply plugin: 'com.google.gms.google-services'

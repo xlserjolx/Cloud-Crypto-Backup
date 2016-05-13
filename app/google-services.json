@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_id": "cloud-crypto-backup",
+    "project_number": "49863537194",
+    "name": "Cloud Crypto Backup"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49863537194:android:76ebbc872c9fe22e",
+        "client_id": "android:ua.ccbackup.serhiyshkurin",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "ua.ccbackup.serhiyshkurin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "49863537194-8l15mn615erld70m90u0v6du7rv0deso.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ua.ccbackup.serhiyshkurin",
+            "certificate_hash": "97B63010E1AC19513477E07D15E6FDAE2A9FBC2A"
+          }
+        },
+        {
+          "client_id": "49863537194-hsln3qqclmn6fplo1c2gae588kpaihs0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ua.ccbackup.serhiyshkurin",
+            "certificate_hash": "7829517CAACBB42C1A32B5586A8C27F2635386DB"
+          }
+        },
+        {
+          "client_id": "49863537194-t824amcsq7u8oa38h9joh87tk9qr742p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 2
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

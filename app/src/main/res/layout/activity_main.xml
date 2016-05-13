@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="ua.ccbackup.serhiyshkurin.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/main_screen_text"
+        android:id="@+id/mainTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/h1_size"
+        android:textStyle="bold"
+        android:textColor="@color/h1_color" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_backup_button_text"
+        android:id="@+id/backupButton"
+        android:textColor="@color/button_text_color"
+        android:textStyle="bold"
+        android:width="200dp"
+        android:textSize="@dimen/main_button_text_size"
+        android:radius="90.0dip"
+        android:ellipsize="start"
+        android:layout_below="@+id/mainTextView"
+        android:layout_centerHorizontal="true"
+        style="@style/styleToggleButtonOff"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restore_button_text"
+        android:id="@+id/restoreButton"
+        android:textColor="@color/button_text_color"
+        android:textStyle="bold"
+        android:width="200dp"
+        android:textSize="@dimen/main_button_text_size"
+        android:radius="90.0dip"
+        android:ellipsize="start"
+        android:layout_below="@+id/backupButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        style="@style/styleToggleButtonOff"
+        android:gravity="center"
+        android:background="@drawable/rounded_corners" />
+</RelativeLayout>

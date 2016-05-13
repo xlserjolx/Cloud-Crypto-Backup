@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ua.ccbackup.serhiyshkurin">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".BackupAccountsChooseActivity"
+            android:label="@string/title_activity_backup_accounts_choose"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:icon="@mipmap/ic_launcher" android:exported="true" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ua.ccbackup.serhiyshkurin.MainActivity" />
+            <meta-data android:name="com.google.android.apps.drive.APP_ID" android:value="49863537194-8l15mn615erld70m90u0v6du7rv0deso.apps.googleusercontent.com" />
+            <intent-filter>
+                <action android:name="com.google.android.apps.drive.DRIVE_OPEN" />
+                <data android:mimeType="application/vnd.google-apps.drive-sdk.49863537194-8l15mn615erld70m90u0v6du7rv0deso.apps.googleusercontent.com" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="paul.arian.fileselector.FileSelectionActivity"
+            android:label="@string/activity_file_selection"
+            android:parentActivityName=".BackupAccountsChooseActivity"/>
+        <activity
+            android:name="paul.arian.fileselector.FolderSelectionActivity"
+            android:label="@string/activity_file_selection"
+            android:parentActivityName=".BackupAccountsChooseActivity"/>
+        <activity
+            android:name=".FileRouletteActivity"
+            android:label="@string/activity_file_roulette_name"
+            android:parentActivityName=".BackupAccountsChooseActivity">
+        <meta-data android:name="com.google.android.apps.drive.APP_ID" android:value="49863537194-8l15mn615erld70m90u0v6du7rv0deso.apps.googleusercontent.com" />
+        <intent-filter>
+            <action android:name="com.google.android.apps.drive.DRIVE_OPEN" />
+            <data android:mimeType="application/vnd.google-apps.drive-sdk.49863537194-8l15mn615erld70m90u0v6du7rv0deso.apps.googleusercontent.com" />
+            <data android:mimeType="*/*" />
+        </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
